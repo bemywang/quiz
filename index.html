@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小馬記憶力大考驗</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome icon -->
+    <script src="https://kit.fontawesome.com/ae59b6ced2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- start quiz -->
+    <div class="start_btn">
+        <button>小馬記憶力大考驗</button>
+    </div>
+    <!-- info box -->
+    <div class="info_box">
+        <div class="info_title">
+            <span>測驗提醒</span>
+            
+        </div>
+        <div class="info_list">
+            <div class="info">1. 考題範圍包羅萬象。</div>
+            <div class="info">2. 共10題，每題10分，滿分100分。</div>
+            <div class="info">3. 每題僅<span>30秒</span>時間應答。</div>
+            <div class="info">4. 一旦選擇後，即送出答案，無法修改。</div>
+            <div class="info">5. 答對9題以上(90分以上)有禮物，只有一次作答機會，Let's GO!</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">離開，下次再測</button>
+            <button class="restart">繼續，進入試題</button>
+        </div>
+    </div>
+
+    <!-- quiz box -->
+    <div class="quiz_box">
+        <!-- quiz header -->
+        <header>
+            <div class="title"><i class="fa-solid fa-pencil"></i>玉米隨堂考</div>
+            <div class="timer">
+                <div class="time_text">剩餘時間：</div>
+                <div class="timer_sec">30</div> 
+                <!-- const timeCount in js -->
+            </div>
+            <div class="time_line"></div> 
+        </header>
+        <!-- quiz section -->
+        <section>
+            <div class="que_text">
+                <!-- question -- javascript -- que_tag -->
+                <!-- <span>有關生態圖的敘述，下列何者錯誤？</span> -->
+            </div>
+            <div class="option_list">
+                <!-- option list -- javascr ipt -- option_tag -->
+                <!-- <div class="option">
+                    <span>能夠發現和評估案主的家族疾病史</span>
+                    <div class="icon tick"><i class="fa-solid fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>是以一般系統理論延伸的記錄方式</span>
+                    <div class="icon cross"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <div class="option">
+                    <span>可以了解案主與社會資源之間的關係</span>
+                </div>
+                <div class="option">
+                    <span>用線條的方向和粗細來描述資源的流向與強弱</span>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Quiz footer -->
+        <footer>
+            <div class="total_que">
+                <!-- javascript for totalQuesCountag -->
+                <!-- <span><p>2</p>/<p>5</p>題</span> -->
+            </div>
+            <button class="next_btn">下一題</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fa-solid fa-crown"></i>
+        </div>
+        <div class="complete_text">
+            恭喜完成測驗！
+        </div>
+        <div class="score_text">
+            <!-- score_tag in js -->
+            <!-- <span>請再接再厲，本次獲得分數<p>2</p> / <p>5</p></span> -->
+        </div>
+        <div class="buttons">
+            <button class="restart">再測一次</button>
+            <button class="quit">離開，檢視本次結果</button>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
