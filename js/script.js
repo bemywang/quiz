@@ -225,5 +225,3 @@ function showResultBox() {
     }
 
 }
-
-// https://www.youtube.com/watch?v=WUBhpSRS_fk
