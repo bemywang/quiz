@@ -212,15 +212,15 @@ function showResultBox() {
     result_box.classList.add("activeResult"); //show the result box
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 9) { //4題 -->  每題*20分
-        let scoreTag = '<span>情人節快樂!贈送兔年腳底搔癢5秒鐘，憑截圖兌換，獲得分數<p>' + (userScore*10) + '</p> / <p>100</p></span>';
+        let scoreTag = '<span>超強的!!你宮劇系!獲得分數<p>' + (userScore*10) + '</p> / <p>100</p></span>';
         scoreText.innerHTML = scoreTag;
     }
     else if (userScore > 7) { //3題 --> 不錯 每題*20分
-        let scoreTag = '<span>情人節快樂!0.0a，離大獎差一點點，獲得分數<p>' + (userScore*10) + '</p> / <p>100</p></span>';
+        let scoreTag = '<span>還可以拉，再接再厲喔，獲得分數<p>' + (userScore*10) + '</p> / <p>100</p></span>';
         scoreText.innerHTML = scoreTag;
     }
     else { //3題 --> 再努力 每題*20分
-        let scoreTag = '<span>情人節快樂!=.=a沒有按摩卷，獲得分數<p>' + (userScore*10) + '</p> / <p>100</p></span>';
+        let scoreTag = '<span>嘖嘖分數不佳，你還是去補看內容，獲得分數<p>' + (userScore*10) + '</p> / <p>100</p></span>';
         scoreText.innerHTML = scoreTag;
     }
 
